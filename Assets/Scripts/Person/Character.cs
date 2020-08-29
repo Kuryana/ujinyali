@@ -7,17 +7,17 @@ public class Character : MonoBehaviour
   protected string name;
   protected float speed;
 
-  public static Vector3 Move()
+  public void Move(Vector3 direction)
   {
-    return Vector3.zero;
+    transform.position += direction * speed * Time.deltaTime;
   }
 
-  public static void Berbicara()
+  public void Berbicara()
   {
 
   }
 
-  protected static void UseLighting()
+  public void UseLighting()
   {
 
   }
